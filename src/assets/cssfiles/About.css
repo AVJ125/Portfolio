@@ -1,0 +1,27 @@
+.image-slide {
+  opacity: 0;
+  height: 70%;
+  transform: translateY(100%);   /* start 50px below */
+  animation: slideUp 0.8s ease-out forwards;
+  border-radius: 8px;
+}
+div.image-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+div.left{
+    text-align: right;
+    color: white;
+    justify-items: end;
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* move to normal position */
+  }
+}
+
+
+
