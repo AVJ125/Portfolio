@@ -1,7 +1,22 @@
 import { Link } from 'react-router-dom';
 import '../cssfiles/Navigation.css'
 
+
 function Navigations(props){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
     <div>
       <div className='svgHolder'>

@@ -4,18 +4,22 @@ import Navigations from "./navigation"
 function About(props) {
   
   return (
-      <div>
+      <div className='zilla-slab-light'>
         <Navigations whichpage="About" />
         
-        <div className='image-container'>
-          <div className="left">
-            ANIKET JOSHI
-          </div>
+        <section className='image-container'>
+          <div class="text">
+              <p className='name'>ANIKET</p>
+              <p className='surname'>JOSHI</p>
 
-          <img src="public\shit_sunglare.jpg" alt="Me" class="image-slide" />
+              <p>Software Engineer</p>
+              <p>•Pune,Maharashtra,IND</p>
 
+            </div>
+          <img src="public\shit_sunglare.jpg" alt="Aniket Joshi" class="image" />
+                    
 
-        </div>
+        </section>
         
         
       </div>
