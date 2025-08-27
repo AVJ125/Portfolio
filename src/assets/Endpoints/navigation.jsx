@@ -1,22 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import Sidebar from './sidebar'
+
 import '../cssfiles/Navigation.css'
 
-
 function Navigations(props){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return (
     <div>
       <div className='svgHolder'>
@@ -33,7 +20,7 @@ function Navigations(props){
           <div className={`Experience  ${props.whichpage === "Experience" ? "active" : "nav-link"}` }><Link to="/experience">Experience</Link></div>
         </div>
         <div className="right">
-          <div className='contactMe'>Contact me</div>
+          <Sidebar />
         </div>
 
 

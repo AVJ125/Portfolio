@@ -2,6 +2,7 @@
 
 
 
+
 .image-container{
   --split: clamp(50px, 5vw, 100px);  /* how far they end apart */
   min-height: 100vh;
@@ -37,8 +38,8 @@
   opacity: 0;
   transform:  translateY(100%);
   animation:
-    pop 0.6s ease-in forwards,
-    imgShift 0.6s 0.6s ease-out forwards;     /* starts after pop */
+    pop 1s ease-in forwards,
+    imgShift 1s 1s ease-out forwards;     /* starts after pop */
 }
 @keyframes pop{
   to { opacity:1; transform: scale(1) translateX(0); }
@@ -51,8 +52,11 @@
 .text{
   opacity: 0;
   transform: translateX(100%);
-  animation: textIn 0.6s 0.6s ease-out forwards;
+  animation: textIn 1s 1s ease-out forwards;
 }
 @keyframes textIn{
   to { opacity:1; transform: translateX(calc(-1 * var(--split))); }
 }
+
+
+

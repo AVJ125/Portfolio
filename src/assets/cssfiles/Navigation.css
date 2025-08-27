@@ -1,10 +1,11 @@
 body{
   margin: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .nav-link {
   position: relative;
   text-decoration: none;
+  cursor: pointer;
  
 }
 
@@ -28,10 +29,12 @@ body{
 .active{
   text-decoration: underline;
   text-decoration-color: orange;
+  cursor: pointer;
 }
 div.svgHolder{
   overflow: hidden;
 }
+
 a {
   text-decoration: none;  
   color: inherit;         
@@ -52,7 +55,7 @@ div.contactMe{
   font-weight: 300;
   font-style: normal;
   font-size: 24px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 div.container{
@@ -69,9 +72,8 @@ div.middle{
   gap: 11rem;
 }
 div.right{
- 
+  padding-right: 20px;
   text-align: right;
-  padding-right: 50px;
   margin-top: -10px;
 
 }
@@ -80,23 +82,11 @@ div.right{
   left: 50%;
   top:50%;
   transform: translate(-50%,-50%);
-  height: 320%;
-  width: 320%;
+  height: 300%;
+  width: 300%;
   z-index: -1;
 }
 
 
-
-/* full-screen overlay */
-.page-transition{
-  position: fixed; inset: 0; z-index: 9999; pointer-events: none;
-  --x: 50vw; --y: 50vh;                     /* start point */
-  background: #000;                         /* or a gradient */
-  clip-path: circle(0% at var(--x) var(--y));
-  transition: clip-path 600ms ease-out;
-}
-.page-transition.active{
-  clip-path: circle(150% at var(--x) var(--y)); /* expands */
-}
 
 
