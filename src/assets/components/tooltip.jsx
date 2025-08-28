@@ -30,10 +30,10 @@ const PreviewTooltip = ({ previewImage, previewUrl, children ,zin}) => {
         <div style={{
         top: pos.y,
           left: pos.x - 320,  // Adjust left to position tooltip on the left side
-          zIndex:4000,
+          zIndex:'50',
           width: '300px',
           height: '200px',
-          backgroundColor: '#ffffffff',
+          backgroundColor: '#000000ff',
           border: '1px solid #ff0000ff',
           boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
         }}>
