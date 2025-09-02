@@ -11,21 +11,21 @@ const DEFAULT_ITEMS = [
   {
     title: "Travel",
     description: "",
-    img:'/public/carouselimage/beachphoto.jpg',
+    img:'/carouselimage/beachphoto.jpg',
     id: 1,
     icon: <FiFileText className="carousel-icon" />,
   },
   {
     title: "Biking",
     description: "",
-    img:'/public/carouselimage/Bike.jpg',
+    img:'/carouselimage/Bike.jpg',
     id: 2,
     icon: <FiCircle className="carousel-icon" />,
   },
   {
     title: "Gaming",
     description: "Reusable components for your projects.",
-    img:'/public/carouselimage/Game.jpg',
+    img:'/carouselimage/Game.jpg',
 
     id: 3,
     icon: <FiLayers className="carousel-icon" />,
@@ -34,14 +34,14 @@ const DEFAULT_ITEMS = [
     title: "Gym",
     description: "Beautiful backgrounds and patterns for your projects.",
     id: 4,
-    img:'/public/carouselimage/gym.jpg',
+    img:'/carouselimage/gym.jpg',
   
     icon: <FiLayout className="carousel-icon" />,
   },
   {
     title: "Travel",
     description: "Common UI components are coming soon!",
-    img:'/public/carouselimage/Waterfall.jpg',
+    img:'/carouselimage/Waterfall.jpg',
     id: 5,
     icon: <FiCode className="carousel-icon" />,
   },

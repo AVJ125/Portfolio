@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Sidebar from './sidebar.jsx'
-import logo from '/public/letter-a.png' 
+import logo from '/letter-a.png' 
 import '../cssfiles/Navigation.css'
 import CardNav from '../components/CardNav'
 

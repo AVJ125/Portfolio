@@ -54,7 +54,7 @@ function About(props) {
 
 
             </div>
-          <img src="public\most-used.jpg" alt="Aniket Joshi" className="image" />
+          <img src="most-used.jpg" alt="Aniket Joshi" className="image" />
                     
 
         </section>
@@ -126,18 +126,18 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Languages & Frameworks</p >
             <div className="column2">
-              <img height={'50px'} src="/public/svgs/python.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/javascript.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/kotlin.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/java.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/mysql.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/mongo.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/django.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/spring.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/react.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/postgres.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/html.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/css.svg" alt="" />
+              <img height={'50px'} src="/svgs/python.svg" alt="" />
+              <img height={'50px'} src="/svgs/javascript.svg" alt="" />
+              <img height={'50px'} src="/svgs/kotlin.svg" alt="" />
+              <img height={'50px'} src="/svgs/java.svg" alt="" />
+              <img height={'50px'} src="/svgs/mysql.svg" alt="" />
+              <img height={'50px'} src="/svgs/mongo.svg" alt="" />
+              <img height={'50px'} src="/svgs/django.svg" alt="" />
+              <img height={'50px'} src="/svgs/spring.svg" alt="" />
+              <img height={'50px'} src="/svgs/react.svg" alt="" />
+              <img height={'50px'} src="/svgs/postgres.svg" alt="" />
+              <img height={'50px'} src="/svgs/html.svg" alt="" />
+              <img height={'50px'} src="/svgs/css.svg" alt="" />
 
 
 
@@ -150,9 +150,9 @@ function About(props) {
             <p className="column1">DevOps and Infrastucture</p>
             <div className="column2">
             
-              <img height={'50px'} src="/public/svgs/docker.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/jenkins.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/kubernetes.svg" alt="" />
+              <img height={'50px'} src="/svgs/docker.svg" alt="" />
+              <img height={'50px'} src="/svgs/jenkins.svg" alt="" />
+              <img height={'50px'} src="/svgs/kubernetes.svg" alt="" />
 
 
 
@@ -163,8 +163,8 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Other Tools</p>
             <div className="column2">
-              <img height={'50px'} src="/public/svgs/git.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/powerauto.svg" alt="" />
+              <img height={'50px'} src="/svgs/git.svg" alt="" />
+              <img height={'50px'} src="/svgs/powerauto.svg" alt="" />
             
 
             </div>
@@ -174,8 +174,8 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Currently Learning</p>
             <div className="column2">
-              <img height={'50px'} src="/public/svgs/flutter.svg" alt="" />
-              <img height={'50px'} src="/public/svgs/swift.svg" alt="" />
+              <img height={'50px'} src="/svgs/flutter.svg" alt="" />
+              <img height={'50px'} src="/svgs/swift.svg" alt="" />
 
             </div>
           </div>
