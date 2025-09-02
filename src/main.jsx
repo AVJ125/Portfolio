@@ -10,6 +10,7 @@ import SplashCursor from './assets/components/Splashcursor.jsx'
 const router=createBrowserRouter(
   
     [
+      {path:"/",element:<About/>},
       {path:"/about",element:<About />},
       {path:"/experience",element:<Experience />},
       {path:"/projects",element:<Projects />},

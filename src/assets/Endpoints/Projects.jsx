@@ -4,7 +4,7 @@ function Projects(){
     return (
         <div>
             <Navigation whichpage="Projects"/>
-            <SplashCursor/>
+            
         </div>
     )
 }
