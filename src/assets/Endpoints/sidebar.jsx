@@ -1,0 +1,52 @@
+// Install react-icons with: npm install react-icons
+import React from 'react';
+import { FaGithub, FaYoutube, FaInstagram, FaTwitter, FaLinkedin ,FaFile} from 'react-icons/fa';
+const openInNewTab = (url) => {
+  window.open(url, '_blank', 'noopener,noreferrer');
+};
+
+function Sidebar(props){
+  const iconcolor=`${props.coloor==='black'? 'white':'black'} `
+
+
+
+
+
+
+
+
+  return (
+
+    <div style={{
+      position: 'fixed',
+      right: 0,
+      top:0,
+      background: 'transparent',
+      padding: '1rem 0.5rem',
+      display: 'flex',
+    transform:'translateY(-16%)',
+    flexDirection: 'column',
+    alignItems: 'end',
+    gap: '1.5rem',
+    zIndex:50,
+    height: '350px', // adjust height as needed
+  }}>
+    <div style={{
+      borderLeft: `2px solid ${iconcolor}`,
+      height: '60px',
+      paddingRight:'1rem',
+      marginTop: '1rem'
+    }} />
+    <FaGithub  onClick={()=>{openInNewTab("https://github.com/AVJ125")}}  title='Github' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} /> 
+    <FaInstagram onClick={()=>{openInNewTab("https://www.instagram.com/avj125")}} title='Instagram' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} />
+    <FaFile onClick={()=>{openInNewTab("https://drive.google.com/file/d/14St5yimqGdCan1tYC1CQ-MKFCdu-gM-m/view?usp=sharing")}} title='Resume' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} /> 
+    <FaLinkedin onClick={()=>{openInNewTab("https://www.linkedin.com/in/aniket-joshi-1b18271ba/")}} title='LinkedIn' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} />
+
+
+
+    
+ {/* Optional: Add a line at the bottom */}
+  </div>)
+}
+
+export default Sidebar;

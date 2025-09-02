@@ -1,0 +1,73 @@
+.marquee-wrap{
+  position: relative;         /* parent for absolute layers */
+  height: 300px;              /* same as .parallax height */
+  pointer-events: none;       /* so background isn't clickable */
+  z-index: 0;                 /* keep behind foreground content */
+}
+.parallax.layer{
+  position: absolute;
+  inset: 0;               /* top/right/bottom/left = 0 */
+  overflow: hidden;      /* allow the diagonal to extend */
+  padding: 0;             /* remove the vertical spacing */
+}
+/* Turn each parallax lane into an absolute layer */
+.layer{
+  position: absolute;
+  inset: 0;                   /* fill the wrapper */
+  overflow: visible;          /* avoid diagonal clipping */
+  will-change: transform;
+}
+
+/* Stacking + slight offset so they overlap nicely */
+.layer--back  { z-index: -3; top: -10px; opacity: .55; }
+.layer--front { z-index: -2; top:  10px; opacity: .85; }
+.scroller--neg { rotate: -3deg; padding-top: 4%;}
+.scroller--pos { rotate:  3deg; padding-top: 4%; }  /* positive angle */
+
+
+.custom-scroll-text-top{
+  background-color: #ea00ff;
+  font-size: 50px;
+}
+
+.custom-scroll-text-bottom{
+  background-color: #ea00ff;
+  color: #ea00ff;
+}
+
+.zilla-slab-light {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  height:300px;
+  padding-top: 10%;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}

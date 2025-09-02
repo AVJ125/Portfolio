@@ -1,0 +1,182 @@
+.common-row{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-items: start;
+  padding-bottom: 5%;
+}
+.column1{
+  font-size: xx-large;
+  width: fit-content;
+}
+.column2{
+ justify-items: center;
+ align-items: start;
+}
+
+.TechStack{
+  padding-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: #ea00ff;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  margin-top: 50px;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.3em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #ea00ff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.3em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+.aboutMeGrid{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 20%;
+}
+.aboutMe{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.aboutP{
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 120%;
+  word-spacing: 10px;
+}
+.aboutNameMain{
+  font-size: xx-large;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+
+
+.image-container{
+  --split: clamp(50px, 5vw, 100px);  /* how far they end apart */
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  place-items: center;
+  align-items: center;
+  transform: translateY(-15%);
+  padding-top: 10%;
+}
+.image{ width: min(32vw, 420px); height: auto; z-index:2; border-radius: 8px;}
+.text{  z-index:1; text-align: left;
+}
+
+.zilla-slab-light {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.name{
+    font-size: 50px;
+    margin-bottom: 0px;
+
+}
+
+.surname{
+    font-size: 50px;
+
+    margin: 0px;
+}
+.image{
+  opacity: 0;
+  transform:  translateY(100%);
+  animation:
+    pop 1s ease-in forwards,
+    imgShift 1s 1s ease-out forwards;     /* starts after pop */
+}
+.wrap-text{
+  width: 70%;        /* set your max width */
+  white-space: normal; /* allow wrapping (default) */
+  word-wrap: break-word; /* break long words if needed */
+  line-height: 1.5;  
+}
+@keyframes pop{
+  to { opacity:1; transform: scale(1) translateX(0); }
+}
+@keyframes imgShift{
+  from { transform: scale(1) translateX(0); }
+  to   { transform: scale(1) translateX(var(--split)); }
+}
+
+.text{
+  opacity: 0;
+  transform: translateX(100%);
+  animation: textIn 1s 1s ease-out forwards;
+}
+@keyframes textIn{
+  to { opacity:1; transform: translateX(calc(-1 * var(--split))); }
+}
+
+
+

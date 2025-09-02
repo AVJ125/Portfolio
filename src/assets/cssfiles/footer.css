@@ -1,0 +1,13 @@
+.footerclass{
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.getInTouch{
+    padding-top: 5%;
+    color: white;
+    margin: 0;
+    font-size: xx-large;
+}
