@@ -1,9 +1,10 @@
+import SplashCursor from "../components/Splashcursor"
 import Navigation from "./navigation"
 function Projects(){
     return (
         <div>
             <Navigation whichpage="Projects"/>
-            <h1>THIS IS PROJECTS NIGGA</h1>
+            <SplashCursor/>
         </div>
     )
 }
