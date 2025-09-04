@@ -7,7 +7,7 @@ const EXPERIENCES = [
     id: "exp-1",
     company: "Qualys INC",
     role: "Software Engineer- SRE",
-    logo:"",
+    logo:"/svgs/Logo-Qualys.svg",
     // NANTAR LOGO ADD KAR
     start: "April 2024",
     end: "Present",
@@ -26,7 +26,7 @@ const EXPERIENCES = [
     id: "exp-2",
     company: "Mercedes Benz India Pvt Ltd",
     role: "Software Enginnering Intern",
-    logo:"",
+    logo:"/svgs/Mercedes.svg",
     start: "June 2023",
     end: "Dec 2023",
     location: "Pune, Maharashtra, IND.",
@@ -43,7 +43,7 @@ const EXPERIENCES = [
     id: "exp-3",
     company: "BrewAndBuzz® Digital Solutions",
     role: "Software Engineer Intern",
-    logo:"",
+    logo:"/svgs/brewandbuzz_logo.jpg",
     start: "June 2022",
     end: "August 2022",
     location: "Online",
@@ -58,14 +58,14 @@ const EXPERIENCES = [
     id: "exp-3",
     company: "Innotek IT Systems",
     role: "Software Engineer Intern",
-    logo:"",
+    logo:"/svgs/innotek.jpg",
     start: "June 2021",
     end: "August 2021",
     location: "Online",
     bullets: [
         "Developed and maintained full-stack web and e-commerce applications using MongoDB, Express.js, React, Node.js (MERN stack) and WordPress CMS.",
         "Implemented RESTful APIs with Express.js and integrated them with React frontends, while also customizing WordPress plugins and themes for dynamic functionality.",
-        "Designed and optimized MongoDB schemas for scalability, and built responsive UIs with modern CSS for cross-device compatibility.",
+        
     ],
     link: "https://example.com",
   }
@@ -74,7 +74,7 @@ const EXPERIENCES = [
 export default function Timeline() {
   return (
     <main className="experience-page">
-      <h1 className="experience-title">Experience</h1>
+      <p className="experience-title">Experience</p>
 
       <section className="timeline" aria-label="Experience timeline">
         {EXPERIENCES.map((exp, idx) => (
@@ -90,14 +90,14 @@ function TimelineItem({ exp, side }) {
     <article className={`timeline-item ${side}`}>
       <div className="content">
         <header className="header">
-          <div>
+          <div className="namecol">
             <h3 className="role">{exp.role}</h3>
             <a href={exp.link} target="_blank" rel="noreferrer" className="company">
                 {exp.company}
             </a>
           </div>
-          <div>
-            <img src="/public/svgs/Logo-Qualys.svg" alt="" />
+          <div className="logocol">
+            <img src={exp.logo} className="logoimage"  alt="" />
           </div>
         </header>
 
