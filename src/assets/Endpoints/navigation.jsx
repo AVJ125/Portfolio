@@ -8,7 +8,7 @@ function Navigations(props){
     const items = [
     {
       label: "About",
-      bgColor: "#170D27",
+      bgColor: "#000000ff",
       textColor: "#fff",
       links: [
         { label: "Tech Stack", ariaLabel: "About Company" }
@@ -16,7 +16,7 @@ function Navigations(props){
     },
     {
       label: "Projects", 
-      bgColor: "#170D27",
+      bgColor: "#000000ff",
       textColor: "#fff",
       links: [
         { label: "Projects", ariaLabel: "Projects Company" }
@@ -25,7 +25,7 @@ function Navigations(props){
     },
     {
       label: "Experience",
-      bgColor: "#170D27", 
+      bgColor: "#000000ff", 
       textColor: "#fff",
       links: [
         { label: "Experience", ariaLabel: "Experience Company" }

@@ -3,7 +3,7 @@ import Carousel from '../components/Carousel'
 import '../cssfiles/About.css'
 import SplashCursor from '../components/Splashcursor'
 import ScrollVelocity from '../components/ScrollVelocity'
-const coloor='white'
+const coloor='black'
 import Orb from '../components/Orb.jsx'
 import '../components/Footer'
 
@@ -20,10 +20,10 @@ function About(props) {
   }
   return (
         <div className='zilla-slab-light main-container' style={{backgroundColor:`${coloor}`}}>
-        <div className="curtain">
-          <p className='curtainP'>Aniket Joshi</p>
+        <div className="curtain" style={{backgroundColor:`${coloor==='black'? 'black':'white'} `}}>
+          <p className='curtainP' style={{color:`${coloor==='black'? 'white':'black'} `}}>Aniket Joshi</p>
         </div>
-        <div style={{ width: '100%', height: '1400px', position: 'fixed', zIndex:0 ,paddingTop:'1%'}}>
+        <div style={{ width: '100%', height: '2000px', position: 'fixed', zIndex:0 ,paddingTop:'1%'}}>
           <Orb
             hoverIntensity={0.5}
             rotateOnHover={true}
