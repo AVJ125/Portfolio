@@ -1,9 +1,10 @@
 import Navigation from "./navigation"
+import Timeline from "../components/Timeline.jsx"
 function Experience(){
     return (
         <div>
             <Navigation whichpage="Experience"/>
-            <h1>THIS IS Exp NIGGA</h1>
+            <Timeline />
         </div>
     )
 }

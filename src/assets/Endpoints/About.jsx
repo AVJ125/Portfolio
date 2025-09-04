@@ -20,10 +20,11 @@ function About(props) {
   }
   return (
         <div className='zilla-slab-light main-container' style={{backgroundColor:`${coloor}`}}>
-        
+        <div className="curtain">
+          <p className='curtainP'>Aniket Joshi</p>
+        </div>
 
-
-    <Navigations whichpage="About" coloor={coloor}/>
+        <Navigations whichpage="About" coloor={coloor}/>
           
         
         
