@@ -6,6 +6,7 @@ import Experience from './assets/Endpoints/Experience.jsx'
 import Projects from './assets/Endpoints/Projects.jsx'
 import Rootlayout from './assets/Endpoints/Rootlayout.jsx'
 import Navigations from './assets/Endpoints/navigation.jsx'
+import Orb from './assets/components/Orb.jsx';
 import SplashCursor from './assets/components/Splashcursor.jsx'
 const router=createBrowserRouter(
   
@@ -23,6 +24,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 
     <RouterProvider router={router}  />
+
+    
     <SplashCursor/>
+
   </StrictMode>,
 )

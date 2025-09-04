@@ -4,7 +4,7 @@ import '../cssfiles/About.css'
 import SplashCursor from '../components/Splashcursor'
 import ScrollVelocity from '../components/ScrollVelocity'
 const coloor='white'
-
+import Orb from '../components/Orb.jsx'
 import '../components/Footer'
 
 import Navigations from "./navigation"
@@ -23,7 +23,14 @@ function About(props) {
         <div className="curtain">
           <p className='curtainP'>Aniket Joshi</p>
         </div>
-
+        <div style={{ width: '100%', height: '1400px', position: 'fixed', zIndex:0 ,paddingTop:'1%'}}>
+          <Orb
+            hoverIntensity={0.5}
+            rotateOnHover={true}
+            hue={0}
+            forceHoverState={false}
+          />
+        </div>
         <Navigations whichpage="About" coloor={coloor}/>
           
         
