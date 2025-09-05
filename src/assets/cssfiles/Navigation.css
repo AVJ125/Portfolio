@@ -20,7 +20,7 @@ body{
   left: 50%;               /* start from center */
   bottom: 0;               /* stick to text bottom */
   width: 100%;
-  height: 2px;             /* underline thickness */
+  height: 1.6px;             /* underline thickness */
   background-color: rgb(0, 0, 0); /* underline color */
   transform: translateX(-50%) scaleX(0);  /* hidden at center */
   transform-origin: center;               /* grow from center */
@@ -50,16 +50,16 @@ div.contactMe{
   
   background-color: rgb(255,138,0);
   color: black;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 45px;
+  padding: 8px 8px 8px 8px;
+  border: 0.8px solid rgb(0, 0, 0);
+  border-radius: 36px;
   display: inline-block;
 }
 .sansation-light {
   font-family: "Sansation", sans-serif;
-  font-weight: 300;
+  font-weight: 240;
   font-style: normal;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 div.container{
@@ -67,8 +67,8 @@ div.container{
   grid-template-columns: 1fr auto 1fr auto;
   grid-template-rows: auto;
   align-items: start;
-  padding: 10px;
-  padding-top: 40px;
+  padding: 8px;
+  padding-top: 32px;
 }
 
 div.middle{
@@ -78,9 +78,9 @@ div.middle{
   padding-top: 5%;
 }
 div.right{
-  padding-right: 20px;
+  padding-right: 16px;
   text-align: right;
-  margin-top: -10px;
+  margin-top: -8px;
 
 }
 .svg{

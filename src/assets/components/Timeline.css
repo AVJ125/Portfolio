@@ -1,20 +1,20 @@
 html{
   font-family: "Sansation", sans-serif;
-  font-weight: 300;
+  font-weight: 240;
   font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
 }
 .content{
-  border: #ea00ff 2px solid;
+  border: #ffffff 2px solid;
 }
-.experience-page{ padding-left: 40px; padding-right: 40px; padding-top: 10%; font-family:system-ui, Arial, sans-serif; background:#f9f9f9; }
-.experience-title{ text-align:center; font-size:2rem; margin-bottom:40px; }
-.timeline{ position:relative; max-width:900px; margin:0 auto; }
-.timeline::after{ content:""; position:absolute; width:6px; background:#333; top:0; bottom:0; left:50%; margin-left:-3px; }
-.timeline-item{ position:relative; width:70%; padding:20px 40px; }
+.experience-page{ padding-left: 32px; padding-right: 32px; padding-top: 10%; font-family:system-ui, Arial, sans-serif; background:#000000; }
+.experience-title{ text-align:center; font-size:2rem; margin-bottom:32px; }
+.timeline{ position:relative; max-width:720px; margin:0 auto; }
+.timeline::after{ content:""; position:absolute; width:4.8px; background:#ffffff; top:0; bottom:0; left:50%; margin-left:-2.4px; }
+.timeline-item{ position:relative; width:70%; padding:16px 32px; }
 .timeline-item.left{ right: 28.5%; }
 .logoimage{
-  height: 50px;
+  height: 40px;
 }
 .header{
   display: grid;
@@ -27,7 +27,7 @@ html{
 }
 
 .timeline-item.right{ left:49.8%; }
-.timeline-item .content{ background:#fff; border-radius:8px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,.1); }
+.timeline-item .content{ background:#5555; border-radius:8px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,.1);color:rgb(255, 255, 255); }
 .timeline-item::before{ content:""; position:absolute; top:30px; width:20px; height:20px; border-radius:50%; background:#333; border:3px solid #f9f9f9; z-index:1; right:-10px; }
 .timeline-item.right::before{ left:-10px; right:auto; }
 @media (max-width:768px){

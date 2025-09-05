@@ -29,18 +29,18 @@ function Sidebar(props){
     alignItems: 'end',
     gap: '1.5rem',
     zIndex:50,
-    height: '350px', // adjust height as needed
+    height: '280px', // adjust height as needed
   }}>
     <div style={{
       borderLeft: `2px solid ${iconcolor}`,
-      height: '60px',
+      height: '48px',
       paddingRight:'1rem',
       marginTop: '1rem'
     }} />
-    <FaGithub  onClick={()=>{openInNewTab("https://github.com/AVJ125")}}  title='Github' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} /> 
-    <FaInstagram onClick={()=>{openInNewTab("https://www.instagram.com/avj125")}} title='Instagram' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} />
-    <FaFile onClick={()=>{openInNewTab("https://drive.google.com/file/d/14St5yimqGdCan1tYC1CQ-MKFCdu-gM-m/view?usp=sharing")}} title='Resume' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} /> 
-    <FaLinkedin onClick={()=>{openInNewTab("https://www.linkedin.com/in/aniket-joshi-1b18271ba/")}} title='LinkedIn' style={{ fontSize: '2rem', color: {iconcolor}, cursor: 'pointer' }} />
+    <FaGithub  onClick={()=>{openInNewTab("https://github.com/AVJ125")}}  title='Github' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
+    <FaInstagram onClick={()=>{openInNewTab("https://www.instagram.com/avj125")}} title='Instagram' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
+    <FaFile onClick={()=>{openInNewTab("https://drive.google.com/file/d/14St5yimqGdCan1tYC1CQ-MKFCdu-gM-m/view?usp=sharing")}} title='Resume' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
+    <FaLinkedin onClick={()=>{openInNewTab("https://www.linkedin.com/in/aniket-joshi-1b18271ba/")}} title='LinkedIn' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
 
 
 

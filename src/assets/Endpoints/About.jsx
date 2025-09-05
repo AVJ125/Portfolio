@@ -21,16 +21,16 @@ function About(props) {
   return (
         <div className='zilla-slab-light main-container' style={{backgroundColor:`${coloor}`}}>
         <div className="curtain" style={{backgroundColor:`${coloor==='black'? 'black':'white'} `}}>
-          <p className='curtainP' style={{color:`${coloor==='black'? 'white':'black'} `}}>Aniket Joshi</p>
+          <p className='curtainP' style={{color:`${coloor==='black'? 'white':'black'} `}}>Aniket Joshi </p>
         </div>
         <div style={{ width: '100%', height: '2000px', position: 'fixed', zIndex:0 ,paddingTop:'1%'}}>
-          <Orb
-            hoverIntensity={0.5}
-            rotateOnHover={true}
-            hue={0}
-            forceHoverState={false}
-          />
-        </div>
+                      <Orb
+                        hoverIntensity={0}
+                        rotateOnHover={true}
+                        hue={0}
+                        forceHoverState={false}
+                      />
+                    </div>
         <Navigations whichpage="About" coloor={coloor}/>
           
         
@@ -45,9 +45,9 @@ function About(props) {
               Know More
               <div class="icon" onClick={handleAbout}>
                 <svg
-                  height="24"
-                  width="24"
-                  viewBox="0 0 24 24"
+                  height="19.2"
+                  width="19.2"
+                  viewBox="0 0 19.2 19.2"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M0 0h24v24H0z" fill="none"></path>
@@ -90,12 +90,12 @@ function About(props) {
 
 
         <section ref={aboutRef} style={{ }} className='aboutMe'>
-          <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'black'
+          <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'white'
 
         }} className='aboutNameMain'>Background</p>
           <div className="aboutMeGrid">
             <div style={{width:'100%',paddingTop:'10%'}}>
-              <p style={{color:'black'}} className='aboutP'>
+              <p style={{color:'white'}} className='aboutP'>
                 {/* Replace with your background details */}
                 I'm Aniket Joshi, a software engineer with a strong focus on backend development and building applications. My experience at Qualys gave me hands-on exposure to APIs, monitoring tools, and automation that improved system uptime and reduced manual work. I’ve also worked on projects ranging from workflow automation at Mercedes Benz to developing Android and web applications, which has prepared me to take on full-time software development roles.
               </p>
@@ -105,9 +105,9 @@ function About(props) {
             
             </div>
 
-            <div style={{ height: '600px', position: 'relative' }}>
+            <div style={{ height: '480px', position: 'relative' }}>
               <Carousel
-                baseWidth={300}
+                baseWidth={240}
                 autoplay={true}
                 autoplayDelay={3000}
                 pauseOnHover={true}
@@ -125,7 +125,7 @@ function About(props) {
 
 
       <section ref={techStack} style={{ }} className='aboutMe'>
-          <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'black'
+          <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'white'
 
         }} className='aboutNameMain'>Tech Stack</p>
 
@@ -134,18 +134,18 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Languages & Frameworks</p >
             <div className="column2">
-              <img height={'50px'} src="/svgs/python.svg" alt="" />
-              <img height={'50px'} src="/svgs/javascript.svg" alt="" />
-              <img height={'50px'} src="/svgs/kotlin.svg" alt="" />
-              <img height={'50px'} src="/svgs/java.svg" alt="" />
-              <img height={'50px'} src="/svgs/mysql.svg" alt="" />
-              <img height={'50px'} src="/svgs/mongo.svg" alt="" />
-              <img height={'50px'} src="/svgs/django.svg" alt="" />
-              <img height={'50px'} src="/svgs/spring.svg" alt="" />
-              <img height={'50px'} src="/svgs/react.svg" alt="" />
-              <img height={'50px'} src="/svgs/postgres.svg" alt="" />
-              <img height={'50px'} src="/svgs/html.svg" alt="" />
-              <img height={'50px'} src="/svgs/css.svg" alt="" />
+              <img height={'40px'} src="/svgs/python.svg" alt="" />
+              <img height={'40px'} src="/svgs/javascript.svg" alt="" />
+              <img height={'40px'} src="/svgs/kotlin.svg" alt="" />
+              <img height={'40px'} src="/svgs/java.svg" alt="" />
+              <img height={'40px'} src="/svgs/mysql.svg" alt="" />
+              <img height={'40px'} src="/svgs/mongo.svg" alt="" />
+              <img height={'40px'} src="/svgs/django.svg" alt="" />
+              <img height={'40px'} src="/svgs/spring.svg" alt="" />
+              <img height={'40px'} src="/svgs/react.svg" alt="" />
+              <img height={'40px'} src="/svgs/postgres.svg" alt="" />
+              <img height={'40px'} src="/svgs/html.svg" alt="" />
+              <img height={'40px'} src="/svgs/css.svg" alt="" />
 
 
 
@@ -158,9 +158,9 @@ function About(props) {
             <p className="column1">DevOps and Infrastucture</p>
             <div className="column2">
             
-              <img height={'50px'} src="/svgs/docker.svg" alt="" />
-              <img height={'50px'} src="/svgs/jenkins.svg" alt="" />
-              <img height={'50px'} src="/svgs/kubernetes.svg" alt="" />
+              <img height={'40px'} src="/svgs/docker.svg" alt="" />
+              <img height={'40px'} src="/svgs/jenkins.svg" alt="" />
+              <img height={'40px'} src="/svgs/kubernetes.svg" alt="" />
 
 
 
@@ -171,8 +171,8 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Other Tools</p>
             <div className="column2">
-              <img height={'50px'} src="/svgs/git.svg" alt="" />
-              <img height={'50px'} src="/svgs/powerauto.svg" alt="" />
+              <img height={'40px'} src="/svgs/git.svg" alt="" />
+              <img height={'40px'} src="/svgs/powerauto.svg" alt="" />
             
 
             </div>
@@ -182,8 +182,8 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Currently Learning</p>
             <div className="column2">
-              <img height={'50px'} src="/svgs/flutter.svg" alt="" />
-              <img height={'50px'} src="/svgs/swift.svg" alt="" />
+              <img height={'40px'} src="/svgs/flutter.svg" alt="" />
+              <img height={'40px'} src="/svgs/swift.svg" alt="" />
 
             </div>
           </div>

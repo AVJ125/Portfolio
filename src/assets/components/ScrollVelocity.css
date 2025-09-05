@@ -1,6 +1,6 @@
 .marquee-wrap{
   position: relative;         /* parent for absolute layers */
-  height: 300px;              /* same as .parallax height */
+  height: 240px;              /* same as .parallax height */
   pointer-events: none;       /* so background isn't clickable */
   z-index: 0;                 /* keep behind foreground content */
 }
@@ -27,7 +27,7 @@
 
 .custom-scroll-text-top{
   background-color: #ea00ff;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .custom-scroll-text-bottom{
@@ -37,7 +37,7 @@
 
 .zilla-slab-light {
   font-family: "Zilla Slab", serif;
-  font-weight: 300;
+  font-weight: 240;
   font-style: normal;
 }
 
@@ -46,7 +46,7 @@
 .parallax {
   position: relative;
   overflow: hidden;
-  height:300px;
+  height:240px;
   padding-top: 10%;
 }
 
