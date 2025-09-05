@@ -1,0 +1,107 @@
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(300px, 480px) 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+
+.project-card__media {
+  margin: 0;
+  perspective: 1000px; /* enables 3D tilt */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card__tilt {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.project-card__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card__mobile-note {
+  position: absolute;
+  top: -10px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.project-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: white;
+}
+
+.project-card__title {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.project-card__stack {
+  margin: 0;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.project-card__bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.project-card__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  white-space: nowrap;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btn--live { background: #28a745; color: #fff; }
+.btn--github { background: #24292e; color: #fff; }
+
+@media (max-width: 900px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card__media {
+    justify-content: flex-start;
+  }
+
+  .project-card__tilt {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .project-card__img {
+    height: auto !important;
+  }
+}
