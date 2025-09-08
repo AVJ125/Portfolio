@@ -138,10 +138,15 @@ const CardNav = ({
     if (el) cardsRef.current[i] = el;
   };
   const navigate=useNavigate()
+  const openInNewTab = (url) => {
+  window.open(url, '_blank', 'noopener,noreferrer');
+};
   const handleClick=(path)=>{
+
     if (path=='About'){
       navigate('/')
     }
+    
     else if(path=='Projects'){
       navigate('/projects')
     }
@@ -176,6 +181,7 @@ const CardNav = ({
           <button
             type="button"
             className="card-nav-cta-button"
+            onClick={()=>{openInNewTab("https://drive.google.com/file/d/14St5yimqGdCan1tYC1CQ-MKFCdu-gM-m/view?usp=sharing")}}
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
             Resume

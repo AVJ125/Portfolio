@@ -1,13 +1,65 @@
-.footerclass{
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.footer {
+  background-color: #0d0d0d;
+  color: #ddd;
+  padding: 30px 0 15px;
+  margin-top: auto;
+  position: relative;
+  z-index: 100;
+  font-family: 'Arial', sans-serif;
 }
 
-.getInTouch{
-    padding-top: 5%;
-    color: white;
-    margin: 0;
-    font-size: xx-large;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.footer-left p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-center a,
+.footer-right a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-center a:hover,
+.footer-right a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-center,
+  .footer-right {
+    margin-top: 15px;
+  }
 }

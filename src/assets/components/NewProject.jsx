@@ -43,7 +43,7 @@ const {imageSrc,altText,name,techStack,pointsk,githubLink ,liveLink ,hasLive,con
   return (
     <motion.section
       ref={ref}
-      className="project-card"
+      className="project-card indiProject"
       style={{
         height: containerHeight,
         width: containerWidth,

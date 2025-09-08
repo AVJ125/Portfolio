@@ -151,7 +151,7 @@ export default function Carousel({
 
   return (
     <div>
-      <p style={{textAlign:'center'}}>My hobbies :)</p>
+      <p style={{textAlign:'center',color:'white'}}>My hobbies :)</p>
     <div
       ref={containerRef}
       className={`carousel-container ${round ? "round" : ""}`}
