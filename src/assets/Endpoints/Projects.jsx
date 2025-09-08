@@ -3,7 +3,9 @@ import Navigation from "./navigation"
 import TiltedCard from "../components/TiltedCard"
 import Orb from "../components/Orb"
 import NewProject from "../components/NewProject"
+import Footer from '../components/Footer'
 import '../cssfiles/Projects.css'
+import { div } from "motion/react-client"
 
 function Projects(){
   const projects = [
@@ -129,6 +131,7 @@ function Projects(){
 
 
     return (
+
         <div>
             <Navigation whichpage="Projects"/>
             <div style={{ width: '100%', height: '2000px', position: 'fixed', zIndex:'-2' ,paddingTop:'1%'
@@ -152,7 +155,6 @@ function Projects(){
             </div>
         
           
-
 
 
 
