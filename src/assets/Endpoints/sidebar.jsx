@@ -39,7 +39,7 @@ function Sidebar(props){
     }} />
     <FaGithub  onClick={()=>{openInNewTab("https://github.com/AVJ125")}}  title='Github' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
     <FaInstagram onClick={()=>{openInNewTab("https://www.instagram.com/avj125")}} title='Instagram' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
-    <FaFile onClick={()=>{openInNewTab("https://drive.google.com/file/d/14St5yimqGdCan1tYC1CQ-MKFCdu-gM-m/view?usp=sharing")}} title='Resume' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
+    <FaFile onClick={()=>{openInNewTab("https://drive.google.com/file/d/131fPn235t5gCUSbkX6HB3BPXgIuQovOG/view?usp=sharing")}} title='Resume' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
     <FaLinkedin onClick={()=>{openInNewTab("https://www.linkedin.com/in/aniket-joshi-1b18271ba/")}} title='LinkedIn' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
 
 

@@ -181,7 +181,7 @@ const CardNav = ({
           <button
             type="button"
             className="card-nav-cta-button"
-            onClick={()=>{openInNewTab("https://drive.google.com/file/d/14St5yimqGdCan1tYC1CQ-MKFCdu-gM-m/view?usp=sharing")}}
+            onClick={()=>{openInNewTab("https://drive.google.com/file/d/131fPn235t5gCUSbkX6HB3BPXgIuQovOG/view?usp=sharing")}}
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
             Resume
