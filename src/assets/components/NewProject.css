@@ -35,17 +35,27 @@
   font-size: 12px;
   opacity: 0.7;
 }
-.indiProject{
-    /* background: #3d0c56; */
-    background: #3d0c56ad;
-    padding: 5px;
-    width: fit-content;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.774);
-border-radius: 12px;
-margin: 5% 5px 5% 5px;
-
-
+.zilla-slab-light {
+  font-family: "Zilla Slab", serif;
+  font-weight: 240;
+  font-size: 20px;
+  font-style: normal;
 }
+.indiProject{
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: calc(var(--pad) + 4px) var(--pad);
+  margin: 48px 8px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+
+
 .project-card__content {
   display: flex;
   flex-direction: column;
@@ -57,6 +67,7 @@ margin: 5% 5px 5% 5px;
   margin: 0;
   font-size: 1.6rem;
   line-height: 1.2;
+  text-decoration: underline;
 }
 
 .project-card__stack {
@@ -81,20 +92,42 @@ margin: 5% 5px 5% 5px;
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 0.6rem 1.1rem;
-  border-radius: 10px;
+  gap: 0.6rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 120ms ease, box-shadow 120ms ease;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-  white-space: nowrap;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
 }
 
-.btn:hover { transform: translateY(-1px); }
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
-.btn--live { background: #28a745; color: #fff; }
-.btn--github { background: #24292e; color: #fff; }
+.btn:hover::before { opacity: 1; }
+
+.btn--github {
+  background: #24292e;
+  box-shadow: 0 4px 16px rgba(36,41,46,0.35);
+}
+
+.btn--live {
+  background: linear-gradient(135deg, #19c37d, #18e3a8);
+  box-shadow: 0 4px 16px rgba(24,227,168,0.35);
+}
+
+.btn--github:hover { transform: translateY(-2px) scale(1.02); }
+.btn--live:hover { transform: translateY(-2px) scale(1.02); }
 
 @media (max-width: 900px) {
   .project-card {

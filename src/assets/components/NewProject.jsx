@@ -43,7 +43,7 @@ const {imageSrc,altText,name,techStack,pointsk,githubLink ,liveLink ,hasLive,con
   return (
     <motion.section
       ref={ref}
-      className="project-card indiProject"
+      className="project-card indiProject zilla-slab-light"
       style={{
         height: containerHeight,
         width: containerWidth,
@@ -62,7 +62,7 @@ const {imageSrc,altText,name,techStack,pointsk,githubLink ,liveLink ,hasLive,con
 
       {/* RIGHT: Content */}
       <div className="project-card__content">
-        <h3 className="project-card__title">{name}</h3>
+        <p className="project-card__title">{name}</p>
 
         {techStack?.length > 0 && (
           <p className="project-card__stack">
