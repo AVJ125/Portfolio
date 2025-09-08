@@ -1,7 +1,8 @@
 import React from "react";
 import "../cssfiles/footer.css";
-
+import { useNavigate } from "react-router-dom";
 export default function Footer() {
+  const navigate=useNavigate()
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -14,9 +15,9 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <div className="footer-center">
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/experience">Experience</a>
+          <a onClick={()=>{navigate('/')}}>About</a>
+          <a onClick={()=>{navigate('/projects')}}>Projects</a>
+          <a onClick={()=>{navigate('/experience')}}>Experience</a>
           
         </div>
 
