@@ -137,7 +137,11 @@
   font-size: 22px;
   letter-spacing: -0.5px;
 }
-
+.zilla-slab-light {
+  font-family: "Zilla Slab", serif;
+  font-weight: 240;
+  font-style: normal;
+}
 .nav-card-links {
   margin-top: auto;
   display: flex;
@@ -173,6 +177,7 @@
 
   .hamburger-menu {
     order: 2;
+    width: 20%;
   }
 
   .logo-container {
@@ -181,10 +186,10 @@
     order: 1;
   }
 
-  .card-nav-cta-button {
-    display: none;
+  .card-nav-cta-button{
+    margin-left: 4%;
+    margin-bottom: 2%;
   }
-
   .card-nav-content {
     flex-direction: column;
     align-items: stretch;

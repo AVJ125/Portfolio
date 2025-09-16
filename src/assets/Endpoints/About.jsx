@@ -6,6 +6,8 @@ import ScrollVelocity from '../components/ScrollVelocity'
 const coloor='black'
 import Orb from '../components/Orb.jsx'
 import '../components/Footer'
+import TextType from '../components/TextType';
+
 
 import Navigations from "./navigation"
 import Footer from '../components/Footer'
@@ -21,7 +23,13 @@ function About(props) {
   return (
         <div className='zilla-slab-light main-container' style={{backgroundColor:`${coloor}`}}>
         <div className="curtain" style={{backgroundColor:`${coloor==='black'? 'black':'white'} `}}>
-          <p className='curtainP' style={{color:`${coloor==='black'? 'white':'black'} `}}>Aniket Joshi </p>
+          <TextType 
+            text={["Aniket Joshi"]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter=""
+          />
         </div>
         <div style={{ width: '100%', height: '2000px', position: 'fixed', zIndex:0 ,paddingTop:'1%'}}>
                       <Orb
@@ -94,18 +102,18 @@ function About(props) {
 
         }} className='aboutNameMain'>Background</p>
           <div className="aboutMeGrid">
-            <div style={{width:'100%',paddingTop:'10%'}}>
+            <div className='first' style={{width:'100%',paddingTop:'10%'}}>
               <p style={{color:'white'}} className='aboutP'>
                 {/* Replace with your background details */}
                 I'm Aniket Joshi, a software engineer with a strong focus on backend development and building applications. My experience at Qualys gave me hands-on exposure to APIs, monitoring tools, and automation that improved system uptime and reduced manual work. I’ve also worked on projects ranging from workflow automation at Mercedes Benz to developing Android and web applications, which has prepared me to take on full-time software development roles.
               </p>
-              <p className="aboutP">
+              <p className="aboutP" style={{color:'white'}}>
       Outside of work, I enjoy building projects that solve real problems—like an Android and IOS app that helps reduce screen time and a social media app developed with a startup team. I like working on ideas end-to-end, from designing the solution to writing the code that makes it run.
             </p>
             
             </div>
 
-            <div style={{ height: '480px', position: 'relative' }}>
+            <div className='second' style={{ height: '480px', position: 'relative' }}>
               <Carousel
                 baseWidth={240}
                 autoplay={true}
@@ -124,7 +132,7 @@ function About(props) {
 
 
 
-      <section ref={techStack} style={{ }} className='aboutMe'>
+      <section ref={techStack} style={{ }} className='TechStackk'>
           <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'white'
 
         }} className='aboutNameMain'>Tech Stack</p>

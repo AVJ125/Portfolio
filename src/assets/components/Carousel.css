@@ -136,3 +136,21 @@
 .carousel-indicator.inactive {
   background-color: #ffffff;
 }
+
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 8px; /* optional: reduce padding for more space */
+  }
+
+  .carousel-item {
+    width: 100% !important; /* take full width of container */
+    border-radius: 12px;    /* optional: softer corners on mobile */
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+}

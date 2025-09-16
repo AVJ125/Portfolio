@@ -180,7 +180,7 @@ const CardNav = ({
 
           <button
             type="button"
-            className="card-nav-cta-button"
+            className="card-nav-cta-button zilla-slab-light"
             onClick={()=>{openInNewTab("https://drive.google.com/file/d/131fPn235t5gCUSbkX6HB3BPXgIuQovOG/view?usp=sharing")}}
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >

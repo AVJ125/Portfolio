@@ -48,7 +48,10 @@ function Navigations(props){
       ease="power3.out"
     />
       </div>
+      <div className="sidebar">
+
       <Sidebar coloor='black'/>
+      </div>
     
     </div>
     )

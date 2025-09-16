@@ -62,8 +62,25 @@ export default function Carousel({
   round = false,
 }) {
   const containerPadding = 16;
-  const itemWidth = baseWidth - containerPadding * 2;
+  
+  
+  
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+  const isMobile = windowWidth < 768;
+  
+  // If mobile, make it almost full width
+  const itemWidth = isMobile
+  ? windowWidth - containerPadding * 2
+  : baseWidth - containerPadding * 2;
   const trackItemOffset = itemWidth + GAP;
+
 
   const carouselItems = loop ? [...items, items[0]] : items;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,7 +101,7 @@ export default function Carousel({
         container.removeEventListener("mouseleave", handleMouseLeave);
       };
     }
-  }, [pauseOnHover]);
+  }, [pauseOnHover]); 
 
   useEffect(() => {
     if (autoplay && (!pauseOnHover || !isHovered)) {
