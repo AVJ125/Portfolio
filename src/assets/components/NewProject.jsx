@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring } from "motion/react";
 import "./NewProject.css";
-
+ 
 const springValues = { damping: 30, stiffness: 100, mass: 2 };
 
 export default function NewProject({

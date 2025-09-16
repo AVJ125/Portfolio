@@ -6,8 +6,24 @@ import NewProject from "../components/NewProject"
 import Footer from '../components/Footer'
 import '../cssfiles/Projects.css'
 import { div } from "motion/react-client"
+import React,{useState,useEffect} from 'react';
+function useScreenWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+}
 
 function Projects(){
+  const width = useScreenWidth();
+
+  const scale = width <= 768 ? 0 : 1.2;
+
   const projects = [
     {
       name: "Portfolio Website",
@@ -25,7 +41,7 @@ function Projects(){
       hasLive: true,
       containerHeight:'fit-content',
       containerWidth:'80%',
-      scaleOnHover:'1.2',
+      scaleOnHover:`${scale}`,
       rotateAmplitude:'10'
     },
     {
@@ -45,8 +61,8 @@ function Projects(){
       hasLive: false,
       containerHeight:'fit-content',
       containerWidth:'80%',
-      scaleOnHover:'1.2',
-      rotateAmplitude:'10'
+      scaleOnHover:`${scale}`,
+      rotateAmplitude:'10',
     },
      {
       name: "FAM Social Media App Development",
@@ -64,7 +80,7 @@ function Projects(){
       hasLive: true,
       containerHeight:'fit-content',
       containerWidth:'80%',
-      scaleOnHover:'1.2',
+      scaleOnHover:`${scale}`,
       rotateAmplitude:'10'
     },
      {
@@ -84,7 +100,7 @@ function Projects(){
       hasLive: false,
       containerHeight:'fit-content',
       containerWidth:'80%',
-      scaleOnHover:'1.2',
+      scaleOnHover:`${scale}`,
       rotateAmplitude:'10'
     },
      {
@@ -104,7 +120,7 @@ function Projects(){
       hasLive: false,
       containerHeight:'fit-content',
       containerWidth:'80%',
-      scaleOnHover:'1.2',
+      scaleOnHover:`${scale}`,
       rotateAmplitude:'10'
     },
      {
@@ -122,7 +138,7 @@ function Projects(){
       hasLive: true,
       containerHeight:'fit-content',
       containerWidth:'80%',
-      scaleOnHover:'1.2',
+      scaleOnHover:`${scale}`,
       rotateAmplitude:'10'
     }
   ];
