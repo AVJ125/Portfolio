@@ -138,7 +138,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px)  or (max-aspect-ratio:3/4){
   .carousel-container {
     padding: 8px; /* optional: reduce padding for more space */
   }

@@ -19,22 +19,35 @@
   }
 }
 
-.common-row{
+.common-row {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 16px;
-  justify-items: start;
+  grid-template-columns: 250px 1fr; /* left column fixed, right takes rest */
+  gap: 24px;
+  align-items: center; /* aligns items vertically */
   padding-bottom: 5%;
 }
-.column1{
-  color:white;
+
+.column1 {
+  color: white;
   font-size: xx-large;
-  width: fit-content;
 }
-.column2{
- justify-items: center;
- align-items: start;
+
+.column2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;           /* space between each tech-item */
+  align-items: center;
 }
+
+.tech-item {
+  display: flex;
+  flex-direction: column; /* stack icon over text */
+  align-items: center;    /* center text under icon */
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
 
 .TechStack{
   padding-bottom: 10%;
@@ -194,7 +207,7 @@
 }
 
 /* --- Curtain: mobile fix --- */
-@media (max-width: 768px) {
+@media (max-width: 768px)  or (max-aspect-ratio:3/4) {
   .curtain{
     position: absolute;
   }
@@ -226,5 +239,28 @@
   padding-left: 2%;
   padding-right: 2%;
 }
+
+  .common-row {
+    grid-template-columns: 1fr;   /* stack title & icons vertically */
+    text-align: center;
+  }
+
+  .column1 {
+    font-size: 20px; /* slightly smaller title on mobile */
+    margin-bottom: 12px;
+  }
+
+  .column2 {
+    justify-content: center; /* center icons in mobile view */
+    gap: 16px;
+  }
+
+  .tech-item {
+    font-size: 12px; /* smaller captions */
+  }
+
+  .tech-item img {
+    height: 32px; /* shrink icons a bit */
+  }
 
 }

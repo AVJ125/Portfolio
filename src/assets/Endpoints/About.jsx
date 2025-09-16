@@ -142,18 +142,18 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Languages & Frameworks</p >
             <div className="column2">
-              <img height={'40px'} src="/svgs/python.svg" alt="" />
-              <img height={'40px'} src="/svgs/javascript.svg" alt="" />
-              <img height={'40px'} src="/svgs/kotlin.svg" alt="" />
-              <img height={'40px'} src="/svgs/java.svg" alt="" />
-              <img height={'40px'} src="/svgs/mysql.svg" alt="" />
-              <img height={'40px'} src="/svgs/mongo.svg" alt="" />
-              <img height={'40px'} src="/svgs/django.svg" alt="" />
-              <img height={'40px'} src="/svgs/spring.svg" alt="" />
-              <img height={'40px'} src="/svgs/react.svg" alt="" />
-              <img height={'40px'} src="/svgs/postgres.svg" alt="" />
-              <img height={'40px'} src="/svgs/html.svg" alt="" />
-              <img height={'40px'} src="/svgs/css.svg" alt="" />
+              <div className="tech-item"> <img height={'40px'} src="/svgs/python.svg" alt="" /><span>Python</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/javascript.svg" alt="" /><span>Javascript</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/kotlin.svg" alt="" /><span>Kotlin</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/java.svg" alt="" /><span>Java</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/mysql.svg" alt="" /><span>SQL</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/mongo.svg" alt="" /><span>Mongo</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/django.svg" alt="" /><span>Django</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/spring.svg" alt="" /><span>Spring</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/react.svg" alt="" /><span>React</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/postgres.svg" alt="" /><span>PostGres</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/html.svg" alt="" /><span>HTML</span> </div>
+              <div className="tech-item"> <img height={'40px'} src="/svgs/css.svg" alt="" /><span>CSS</span> </div>
 
 
 
@@ -166,9 +166,9 @@ function About(props) {
             <p className="column1">DevOps and Infrastucture</p>
             <div className="column2">
             
-              <img height={'40px'} src="/svgs/docker.svg" alt="" />
-              <img height={'40px'} src="/svgs/jenkins.svg" alt="" />
-              <img height={'40px'} src="/svgs/kubernetes.svg" alt="" />
+              <div className="tech-item"><img height={'40px'} src="/svgs/docker.svg" alt="" /> <span>Docker</span> </div>
+              <div className="tech-item"><img height={'40px'} src="/svgs/jenkins.svg" alt="" /> <span>Jenkins</span> </div>
+              <div className="tech-item"><img height={'40px'} src="/svgs/kubernetes.svg" alt="" /> <span>Kubernetes</span> </div>
 
 
 
@@ -179,8 +179,8 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Other Tools</p>
             <div className="column2">
-              <img height={'40px'} src="/svgs/git.svg" alt="" />
-              <img height={'40px'} src="/svgs/powerauto.svg" alt="" />
+              <div className="tech-item"><img height={'40px'} src="/svgs/git.svg" alt="" /> <span>GIT</span> </div>
+              <div className="tech-item"><img height={'40px'} src="/svgs/powerauto.svg" alt="" /> <span>PowerAutomate</span> </div>
             
 
             </div>
@@ -190,8 +190,8 @@ function About(props) {
           <div className="common-row">
             <p className="column1">Currently Learning</p>
             <div className="column2">
-              <img height={'40px'} src="/svgs/flutter.svg" alt="" />
-              <img height={'40px'} src="/svgs/swift.svg" alt="" />
+              <div className="tech-item"><img height={'40px'} src="/svgs/flutter.svg" alt="" /> <span>Flutter</span> </div>
+              <div className="tech-item"><img height={'40px'} src="/svgs/swift.svg" alt="" /> <span>Swift</span> </div>
 
             </div>
           </div>
