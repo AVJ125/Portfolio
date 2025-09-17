@@ -1,15 +1,20 @@
-import { StrictMode } from 'react'
+'use client';
+import React, { Suspense, lazy ,StrictMode} from 'react';
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import About from './assets/Endpoints/About.jsx'
+// const About = lazy(() => import('./assets/Endpoints/About.jsx'));
 import Experience from './assets/Endpoints/Experience.jsx'
+// const Experience = lazy(() => import('./assets/Endpoints/Experience.jsx'));
 import Projects from './assets/Endpoints/Projects.jsx'
-import { Analytics } from "@vercel/analytics/react"
+// const Projects = lazy(() => import('./assets/Endpoints/Projects.jsx'));
 
+import { Analytics } from "@vercel/analytics/react"
+     
+const VisualFX = lazy(() => import('./assets/components/VisualFX.jsx'));
 import Rootlayout from './assets/Endpoints/Rootlayout.jsx'
 import Navigations from './assets/Endpoints/navigation.jsx'
-import Orb from './assets/components/Orb.jsx';
-import SplashCursor from './assets/components/Splashcursor.jsx'
+
 const router=createBrowserRouter(
   
     [
@@ -26,9 +31,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 
     <RouterProvider router={router}  />
-
-    
-    <SplashCursor/>
+      <Suspense fallback={null}>
+        <VisualFX />
+      </Suspense>
 
     <Analytics/>
   </StrictMode>,

@@ -1,8 +1,11 @@
 .orb-container {
-  position: relative;
+  position: fixed;
   z-index: 0;
-  width: 100%;
-  height: 100%;
+  top:-10%;
+  left:-100%;
+  width: 300%;
+  height: 300%;
+  overflow: hidden;
 }
 @media(max-width: 768px)  or (max-aspect-ratio:3/4){
   .orb-container{

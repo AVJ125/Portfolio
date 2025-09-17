@@ -150,15 +150,7 @@ function Projects(){
 
         <div>
             <Navigation whichpage="Projects"/>
-            <div style={{ width: '100%', height: '2000px', position: 'fixed', zIndex:'-2' ,paddingTop:'1%'
-            }}>
-              <Orb
-                hoverIntensity={0}
-                rotateOnHover={true}
-                hue={0}
-                forceHoverState={false}
-              />
-            </div>
+          
 
              <div className="ProjectSection">
               

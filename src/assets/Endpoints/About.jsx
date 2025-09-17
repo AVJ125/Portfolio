@@ -31,14 +31,7 @@ function About(props) {
             cursorCharacter=""
           />
         </div>
-        <div style={{ width: '100%', height: '2000px', position: 'fixed', zIndex:0 ,paddingTop:'1%'}}>
-                      <Orb
-                        hoverIntensity={0}
-                        rotateOnHover={true}
-                        hue={0}
-                        forceHoverState={false}
-                      />
-                    </div>
+        
         <Navigations whichpage="About" coloor={coloor}/>
           
         
@@ -75,7 +68,7 @@ function About(props) {
 
         </section>
 
-        <div className="marquee-wrap" style={{}}>
+        <div className="marquee-wrap" style={{zIndex:1}}>
         <ScrollVelocity
           texts={['Tech Stack     ★ About Me     ★    Tech Stack     ★ About Me     ★    Tech Stack     ★ About Me     ★    Tech Stack     ★ About Me     ★    Tech Stack     ★ About Me     ★    Tech Stack     ★ About Me     ★    Tech Stack     ★ About Me     ★']} 
           velocity='100' 
@@ -97,8 +90,8 @@ function About(props) {
 
 
 
-        <section ref={aboutRef} style={{ }} className='aboutMe'>
-          <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'white'
+        <section ref={aboutRef} style={{ zIndex:1,position:'relative'}} className='aboutMe' >
+          <p style={{  borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'white'
 
         }} className='aboutNameMain'>Background</p>
           <div className="aboutMeGrid">
@@ -132,7 +125,7 @@ function About(props) {
 
 
 
-      <section ref={techStack} style={{ }} className='TechStackk'>
+      <section ref={techStack} style={{ zIndex:1,position:'relative'}} className='TechStackk'>
           <p style={{ borderBottom: '2px solid #ea00ff',borderTop:'2px solid #ea00ff',color:'white'
 
         }} className='aboutNameMain'>Tech Stack</p>
