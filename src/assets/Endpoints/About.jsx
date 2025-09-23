@@ -7,12 +7,69 @@ const coloor='black'
 import Orb from '../components/Orb.jsx'
 import '../components/Footer'
 import TextType from '../components/TextType';
+const styles={
+    socialIcons: {
+    marginTop: '1.5rem',
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '0.7rem',
+    flexWrap: 'wrap',
+  },
 
+  iconLink: {
+    backgroundColor: '#2A2A2A',
+    padding: '0.5rem',
+    borderRadius: '50%',
+    color: '#fff',
+    fontSize: '1.3rem',
+    textDecoration: 'none',
+    transition: 'all 0.3s ease',
+  },
 
+  
+}
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaGithub,
+  FaGoogle,
+  FaTwitter,
+  
+} from 'react-icons/fa';
+const FaLeetcode = ({ size = 18, color = '#fff', style = {} }) => (
+  <img
+    src="public/leetcode_working.png"
+    alt="LeetCode"
+    style={{
+      width: size,
+      height: size,
+      objectFit: 'contain',
+      // makes it white; remove for default
+      ...style,
+    }}
+  />
+);
+
+const FaTakeUForward = ({ size = 18, color = '#fff', style = {} }) => (
+  <img
+    src="https://takeuforward.org/static/media/TufPlusLight.041fc694d612b3fbaaa0.png"
+    alt="TuF"
+    style={{
+      width: size,
+      height: size,
+      objectFit: 'contain',
+      // makes it white; remove for default
+      ...style,
+    }}
+  />
+);
 import Navigations from "./navigation"
 import Footer from '../components/Footer'
 import { SiCss3, SiDjango, SiDocker, SiFastapi, SiFlask, SiGit, SiHtml5, SiJavascript, SiJenkins, SiKotlin, SiKubernetes, SiLinux, SiMongodb, SiPostgresql, SiPython, SiReact, SiShell, SiSqlite } from 'react-icons/si'
 import { useRef } from 'react'
+import ProfileCard from '../components/ProfileCard.jsx'
 function About(props) {
   const aboutRef=useRef(null)
   const techStack=useRef(null);
@@ -34,39 +91,13 @@ function About(props) {
         
         <Navigations whichpage="About" coloor={coloor}/>
           
+
+        <div style={{minHeight: '100vh', paddingTop:'13%',zIndex:5,position:'relative'}}>
+      <ProfileCard />
+    </div>
         
         
-        <section className='image-container' style={{color:`${coloor==='black'? 'white':'black'} `}}>
-          <div className="text">
-              <p className='name'>ANIKET JOSHI</p>
-
-              <p className='wrap-text'>Full Stack Developer.</p>
-              <p>•Pune,Maharashtra,IND</p>
-            <button class="cssbuttons-io-button">
-              Know More
-              <div class="icon" onClick={handleAbout}>
-                <svg
-                  height="19.2"
-                  width="19.2"
-                  viewBox="0 0 19.2 19.2"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                transform="rotate(90 12 12)"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </div>
-            </button>
-
-
-            </div>
-          <img src="most-used.jpg" alt="Aniket Joshi" className="image" />
-                    
-
-        </section>
+        
 
         <div className="marquee-wrap" style={{zIndex:1}}>
         <ScrollVelocity

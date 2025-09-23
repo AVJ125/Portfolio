@@ -7,8 +7,8 @@ html{
 .content{
   border: #ffffff 2px solid;
 }
-.experience-page{ padding-left: 32px; padding-right: 32px; padding-top: 10%; font-family:system-ui, Arial, sans-serif; background:#000000; }
-.experience-title{ text-align:center; font-size:2rem; margin-bottom:32px; }
+.experience-page{ padding-left: 32px; padding-right: 32px; padding-top: 10%; font-family:system-ui, Arial, sans-serif; z-index: 1;position: relative; }
+.experience-title{ text-align:center; font-size:2rem; margin-bottom:32px; color:white}
 .timeline{ position:relative; max-width:720px; margin:0 auto; }
 .timeline::after{ content:""; position:absolute; width:4.8px; background:#ffffff; top:0; bottom:0; left:50%; margin-left:-2.4px; }
 .timeline-item{ position:relative; width:70%; padding:16px 32px; }

@@ -1,11 +1,12 @@
 .ProjectSection{
-    height: 100vh;
+    height: max-content;
     display: grid;
     margin-top: 10%;
     justify-content: center;
     align-items: center;
     color: white;
     place-items: center;
-    
+    z-index: 1;
+    position:relative
 }
 

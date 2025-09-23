@@ -1,6 +1,6 @@
 // Install react-icons with: npm install react-icons
 import React from 'react';
-import { FaGithub, FaYoutube, FaInstagram, FaTwitter, FaLinkedin ,FaFile} from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaInstagram, FaTwitter, FaLinkedin ,FaFile, FaGoogle} from 'react-icons/fa';
 const openInNewTab = (url) => {
   window.open(url, '_blank', 'noopener,noreferrer');
 };
@@ -38,9 +38,8 @@ function Sidebar(props){
       marginTop: '1rem'
     }} />
     <FaGithub  onClick={()=>{openInNewTab("https://github.com/AVJ125")}}  title='Github' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
-    <FaInstagram onClick={()=>{openInNewTab("https://www.instagram.com/avj125")}} title='Instagram' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
-    <FaFile onClick={()=>{openInNewTab("https://drive.google.com/file/d/131fPn235t5gCUSbkX6HB3BPXgIuQovOG/view?usp=sharing")}} title='Resume' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
-    <FaLinkedin onClick={()=>{openInNewTab("https://www.linkedin.com/in/aniket-joshi-1b18271ba/")}} title='LinkedIn' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
+   <FaLinkedin onClick={()=>{openInNewTab("https://www.linkedin.com/in/aniket-joshi-1b18271ba/")}} title='LinkedIn' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} />
+    <FaGoogle onClick={()=>{openInNewTab("mailto:aniketjoshi2002@gmail.com")}}  title='Github' style={{ fontSize: '2rem', color: 'white', cursor: 'pointer' }} /> 
 
 
 

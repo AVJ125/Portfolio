@@ -22,7 +22,7 @@ function useScreenWidth() {
 function Projects(){
   const width = useScreenWidth();
 
-  const scale = width <= 768 ? 0 : 1.2;
+  const scale = width <= 768 ? 0 : 1;
 
   const projects = [
     {
@@ -147,7 +147,6 @@ function Projects(){
 
 
     return (
-
         <div>
             <Navigation whichpage="Projects"/>
           
@@ -163,6 +162,9 @@ function Projects(){
             </div>
         
           
+      <div style={{ position:'relative', zIndex:1}}>
+      <Footer/>
+        </div>
 
 
 

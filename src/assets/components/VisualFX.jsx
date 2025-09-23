@@ -4,7 +4,7 @@ import Orb from "./Orb"
 export default function VisualFX(){
     return ( 
         <>
-            <SplashCursor />
+            {/* <SplashCursor /> */}
             <div style={{ width: '300%', height: '3000px', position: 'fixed', zIndex:'0',top:'0px',left:'0px' ,paddingTop:'1%'}}>
                 <Orb
                 hoverIntensity={0}
