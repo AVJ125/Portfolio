@@ -143,7 +143,7 @@ return (
                 <p style={styles.location}>Pune, Maharashtra, IND</p>
 
                 <div style={styles.socialIcons}>
-                     <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" style={styles.iconLink}>
+                     <a href="https://www.linkedin.com/in/aniketjoshi2002/" target="_blank" rel="noopener noreferrer" style={styles.iconLink}>
                             <FaLinkedin size={24} color="#fff" />
                     </a>
                     <a href="https://www.geeksforgeeks.org/user/aniketjoshi2002/" style={styles.iconLink}>
@@ -160,7 +160,7 @@ return (
                             style={{ width: '18px', height: '18px'}}
                         />
                     </a>
-                    <a href="https://takeuforward.org/" style={styles.iconLink}>
+                    <a href="https://takeuforward.org/profile/AVJ125" style={styles.iconLink}>
                         <img
                             src="https://takeuforward.org/static/media/TufPlusLight.041fc694d612b3fbaaa0.png"
                             alt="TUF"
