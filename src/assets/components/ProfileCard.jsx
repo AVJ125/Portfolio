@@ -133,7 +133,7 @@ return (
                     style={styles.avatar}
                 />
 
-                <p style={styles.name}><u>ANIKET JOSHI</u></p>
+                <p style={styles.name} className="zilla-slab-light" >ANIKET JOSHI</p>
                 <p style={styles.role}>Full Stack Developer.</p>
                 <p style={styles.location}>Pune, Maharashtra, IND</p>
 
