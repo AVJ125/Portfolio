@@ -70,6 +70,7 @@ import Footer from '../components/Footer'
 import { SiCss3, SiDjango, SiDocker, SiFastapi, SiFlask, SiGit, SiHtml5, SiJavascript, SiJenkins, SiKotlin, SiKubernetes, SiLinux, SiMongodb, SiPostgresql, SiPython, SiReact, SiShell, SiSqlite } from 'react-icons/si'
 import { useRef } from 'react'
 import ProfileCard from '../components/ProfileCard.jsx'
+import IntroSlide from '../components/IntroSlide.jsx'
 function About(props) {
   const aboutRef=useRef(null)
   const techStack=useRef(null);
@@ -79,7 +80,8 @@ function About(props) {
   }
   return (
         <div className='zilla-slab-light main-container' style={{backgroundColor:`${coloor}`}}>
-        <div className="curtain" style={{backgroundColor:`${coloor==='black'? 'black':'white'} `}}>
+          <IntroSlide name="ANIKET JOSHI" />
+        {/* <div className="curtain" style={{backgroundColor:`${coloor==='black'? 'black':'white'} `}}>
           <TextType 
             text={["Aniket Joshi"]}
             typingSpeed={75}
@@ -87,7 +89,7 @@ function About(props) {
             showCursor={true}
             cursorCharacter=""
           />
-        </div>
+        </div> */}
         
         <Navigations whichpage="About" coloor={coloor}/>
           

@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProfileCard.css';
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -17,10 +18,14 @@ const styles = {
     boxSizing: 'border-box',
     background: 'transparent',
     minHeight: '100vh',
+    
+    paddingLeft:'5%',
+    paddingRight:'5%',
     display: 'flex',
     justifyContent: 'center',
     fontFamily: "'Zilla Slab', 'serif'", fontWeight: '240', fontStyle: 'normal'
   },
+  
 
   container: {
     display: 'flex',
@@ -123,7 +128,7 @@ const styles = {
 
 const ProfileCard = () => {
 return (
-    <div style={styles.wrapper }>
+    <div style={styles.wrapper } className="ProfileCardComp">
         <div style={styles.container}>
             {/* LEFT */}
             <div style={styles.leftColumn}>

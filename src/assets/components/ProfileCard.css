@@ -3,3 +3,9 @@
   font-weight: 240;
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  .ProfileCardComp{
+    padding-top:15%;
+  }
+}
