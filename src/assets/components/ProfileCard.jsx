@@ -177,7 +177,7 @@ return (
             <div style={styles.rightColumn}>
                 <p style={styles.aboutTitle}>About Me</p>
                 <p style={styles.aboutText}>
-                    Software Engineer  with 300+ DSA problems solved across LeetCode, GFG, and TUF. Skilled in building full-stack applications using Django, React, and Spring Boot ,Kotlin. 
+                    Software Engineer  with 700+ DSA problems solved across LeetCode, GFG, and TUF. Skilled in building full-stack applications using Django, React, and Spring Boot ,Kotlin. 
                 </p>
                 <p style={styles.aboutText}>
                     Currently working as a Software Engineer at Qualys, with over 2+ years of experience.
